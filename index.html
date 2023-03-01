@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="./Images/logo.png" alt="logo">
+    </header>
+
+
+    <main>
+
+        <div>
+            <p id="error"></p>
+        </div>
+
+        <form action="game.html" id="log-in">
+            <div class="itemForm">
+                <label for="nick">Enter your nick*</label>
+                <input type="text" name="nick" id="nicka" value="@" readonly>
+                <input type="text" name="nick" id="nick" required minlength="3">
+            </div>
+            <div class="itemForm">
+                <label for="size">Game size*</label>
+                <select name="size" id="size" required>
+                    <option value="0">--Please choose an option--</option>
+                    <option value="4">4x4</option>
+                    <option value="5">5x5</option>
+                    <option value="6">6x6</option>
+                </select>
+            </div>
+            <div class="itemForm">
+
+                <div id="avatar">
+                    <label for="avatar">Avatar</label>
+                    <div id="avatarContainer">
+                        <img src="./Images/avatar1.png" alt="avatarselected" id="avatarImg">
+                    </div>
+
+                    <div id="avatarGrid">
+                        <div class="avatarItem">
+                            <img src="./Images/avatar1.png" alt="avatar1" class="avatarImgItem" draggable="true">
+                        </div>
+                        <div class="avatarItem">
+                            <img src="./Images/avatar2.png" alt="avatar2" class="avatarImgItem" draggable="true">
+                        </div>
+                        <div class="avatarItem">
+                            <img src="./Images/avatar3.png" alt="avatar3" class="avatarImgItem" draggable="true">
+                        </div>
+                        <div class="avatarItem">
+                            <img src="./Images/avatar4.png" alt="avatar4" class="avatarImgItem" draggable="true">
+                        </div>
+                        <div class="avatarItem">
+                            <img src="./Images/avatar5.png" alt="avatar5" class="avatarImgItem" draggable="true">
+                        </div>
+                        <div class="avatarItem">
+                            <img src="./Images/avatar6.png" alt="avatar6" class="avatarImgItem" draggable="true">
+                        </div>
+                    </div>
+                </div>
+
+                <p>* Obligatorio</p>
+            </div>
+            <div class="itemForm">
+                <input type="submit" value="Play" id="button">
+            </div>
+        </form>
+
+    </main> 
+
+
+    <footer>
+
+        <p>Curso FrontEnd HTML, CSS y JS</p>
+            
+    </footer>
+
+    <!--JAVASCRIPT-->
+    <script src="./JS/userData.js"></script>
+    <script src="./JS/script.js"></script>
+    
+</body>
+</html>
